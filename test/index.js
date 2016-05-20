@@ -188,7 +188,7 @@ describe('dotlockfile', function() {
             assert.equal(contents.toString(), process.pid);
         });
 
-        it.skip('retries', function*() {
+        it('retries', function*() {
             this.timeout(10000);
             yield fs.writeFile(testLockFilePath, '5');
             setTimeout(function() {
