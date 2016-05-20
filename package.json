@@ -1,0 +1,46 @@
+{
+  "name": "dotlockfile",
+  "version": "0.1.0",
+  "description": "dotlockfile for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require intelli-espower-loader --require co-mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Sinewyk/dotlockfile.js.git"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "dotlockfile",
+    "javascript",
+    "lock",
+    "file"
+  ],
+  "author": "Serge Havas <sinewyk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sinewyk/dotlockfile.js/issues"
+  },
+  "homepage": "https://github.com/Sinewyk/dotlockfile.js#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "co-mocha": "^1.1.2",
+    "eslint": "^1.10.3",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.4.5",
+    "power-assert": "^1.4.1",
+    "styleguide": "github:lrqdo/styleguide"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "mz": "^2.4.0"
+  }
+}
