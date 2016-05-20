@@ -1,5 +1,7 @@
 # Dotlockfile.js
 
+[![Build Status](https://travis-ci.org/Sinewyk/dotlockfile.js.svg?branch=master)](https://travis-ci.org/Sinewyk/dotlockfile.js)
+
 The [node.js](https://nodejs.org/en/) implementation of [dotlockfile](http://manpages.ubuntu.com/manpages/xenial/man1/dotlockfile.1.html) with some [differences](#differences)
 
   * [Install](#install)
