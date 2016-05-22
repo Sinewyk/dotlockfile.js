@@ -4,8 +4,8 @@ const assert = require('power-assert');
 const dotlockfile = require('../');
 const fs = require('mz/fs');
 const path = require('path');
-const timeInSeconds = require('../lib/timeInSeconds');
-const defaultLockFile = require('../lib/defaultLockFile');
+const timeInSeconds = require('../src/timeInSeconds');
+const defaultLockFile = require('../src/defaultLockFile');
 
 const {
     create,

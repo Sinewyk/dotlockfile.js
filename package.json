@@ -2,9 +2,13 @@
   "name": "dotlockfile",
   "version": "0.1.2",
   "description": "dotlockfile for javascript",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader --require co-mocha"
+    "build": "babel lib -d src",
+    "build:watch": "npm run build -- -w",
+    "prepublish": "npm run build",
+    "test": "mocha --compilers js:babel-register --require intelli-espower-loader --require co-mocha",
+    "test:watch": "npm test -- -R min -w"
   },
   "repository": {
     "type": "git",
@@ -15,8 +19,7 @@
     "test": "./test"
   },
   "files": [
-    "index.js",
-    "lib"
+    "src"
   ],
   "keywords": [
     "dotlockfile",
@@ -31,7 +34,10 @@
   },
   "homepage": "https://github.com/Sinewyk/dotlockfile.js#readme",
   "devDependencies": {
+    "babel-cli": "^6.9.0",
     "babel-eslint": "^6.0.4",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "babel-register": "^6.9.0",
     "co-mocha": "^1.1.2",
     "eslint": "^1.10.3",
     "intelli-espower-loader": "^1.0.1",

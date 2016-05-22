@@ -43,7 +43,7 @@ dtf.create(somePath, { pid: process.pid }).then(remove => {
 
 # Known issues
 
-Only compatible node v6 for now because I didn't want to babel all of it too fast.
+Compatible node v4+ only
 
 # Differences
 
